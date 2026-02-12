@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
         </div>
       </main>
     </div>
+    <Footer />
    </>
+   
   );
 }
