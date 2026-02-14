@@ -1,12 +1,11 @@
 import Link from "next/link";
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
+
 
 export default function Home() {
   return (
    <>
-    <Header />
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+  
+    <div className="flex flex-col items-center justify-center  py-2">
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <h1 className="text-6xl"> Bem-vindo ao meu <span className="text-blue-600">portfólio</span></h1>
         <p className="text-2xl mt-3">Comece a construir seu portfólio hoje!</p>
@@ -22,7 +21,7 @@ export default function Home() {
         </div>
       </main>
     </div>
-    <Footer />
+    
    </>
    
   );
