@@ -5,7 +5,7 @@ export default function Home() {
   
   
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+      <section className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <h1 className="text-6xl"> Bem-vindo ao meu <span className="text-blue-600">portfólio</span></h1>
         <p className="text-2xl mt-3">Comece a construir seu portfólio hoje!</p>
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
@@ -18,7 +18,14 @@ export default function Home() {
             <p className="mt-4 text-xl">Gerencie o seu portfólio (requer login)</p>
           </Link>
         </div>
-      </main>
+      </section>
+      <section>
+        <div>
+          <h2>
+            Sobre o Projeto
+          </h2>
+        </div>
+      </section>
     </div>
     
  
