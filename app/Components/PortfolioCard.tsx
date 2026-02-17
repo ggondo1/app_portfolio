@@ -1,29 +1,35 @@
 import { Card, CardDescription, CardTitle, CardHeader, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-
-
 import Image from "next/image"
 
-export function PortfolioCard() {
+type PortfolioCardProps = {
+  id: string,
+  title: string,
+  description: string,
+  imageUrl: string,
+  tags: string[]
+}
+
+export function PortfolioCard(id, title, description, imageUrl, tags): PortfolioCardProps {
   return (
     <Card>
       <div>
         <Image
-          alt = "Titulo do item Portfolio"
-          src=""
+          alt = {title}
+          src= {imageUrl}
 
         />
       </div>
       <CardHeader>
-        <CardTitle>Título</CardTitle>
-        <CardDescription>Descrição</CardDescription>
+        <CardTitle>{title}</CardTitle>
+        <CardDescription>{description}</CardDescription>
 
       </CardHeader>
       <CardContent>
+        
         <Badge>React.js</Badge>
-        <Badge>Next.js</Badge>
-
+      
       </CardContent>
       <CardFooter>
         <Button>
